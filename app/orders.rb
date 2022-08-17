@@ -3,7 +3,7 @@ class Order < ActiveRecord::Base
   belongs_to :coffee
 
   def receipt
-    puts "#{self.customer.name} ordered a #{self.coffee.title} for #{self.price}."
+    puts "#{self.customer.name} ordered a #{self.coffee.title} for $#{self.price}."
   end
 
 
