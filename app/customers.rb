@@ -8,7 +8,6 @@ class Customer < ActiveRecord::Base
 
   def order_coffee coffee_title, price
     new_order = Order.create price: price, customer_id: self.id, coffee_id: Coffee.find_by(title: coffee_title).id
-    binding.pry
     new_order.receipt
   end
 

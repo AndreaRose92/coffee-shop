@@ -1,3 +1,4 @@
+puts "clearing stale coffee..."
 Coffee.destroy_all
 Customer.destroy_all
 Order.destroy_all
